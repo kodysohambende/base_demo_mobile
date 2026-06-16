@@ -1,6 +1,3 @@
-// import 'package:interns2026_expense_manager/framework/repository/overview/categories_model.dart';
-// import 'package:interns2026_expense_manager/framework/repository/overview/expense_model.dart';
-
 import 'package:base_demo_ob/framework/repository/user/model/user_model.dart';
 import 'package:base_demo_ob/objectbox.g.dart';
 import 'package:objectbox/objectbox.dart';

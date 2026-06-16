@@ -40,7 +40,7 @@ class AppConstants {
   static const theta = 'θ';
   static const xAuthToken = 'X-Auth-Token';
   static const headerAuthToken = '';  // Add token here
-  static WidgetRef? globalRef;
+  WidgetRef? globalRef;
 
 
 

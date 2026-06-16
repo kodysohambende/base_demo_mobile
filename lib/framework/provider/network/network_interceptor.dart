@@ -5,6 +5,9 @@ import 'package:base_demo_ob/framework/provider/api_end_points.dart';
 import 'package:base_demo_ob/framework/provider/network/network_helper.dart';
 import 'package:base_demo_ob/framework/provider/network_exceptions.dart';
 import 'package:base_demo_ob/framework/utils/session.dart';
+import 'package:base_demo_ob/ui/routing/delegate.dart';
+import 'package:base_demo_ob/ui/routing/navigation_stack_item.dart';
+import 'package:base_demo_ob/ui/routing/stack.dart';
 import 'package:base_demo_ob/ui/utils/widgets/common_alert.dart';
 
 InterceptorsWrapper networkInterceptor(Dio dio) {
@@ -76,7 +79,7 @@ InterceptorsWrapper networkInterceptor(Dio dio) {
         Session.userAccessToken = '' ;
 
         // Set to login
-        AppConstants.globalRef?.read(navigationStackController).pushAndRemoveAll(const NavigationStackItem.splash());
+        AppConstants.constant.globalRef?.read(navigationStackController).pushAndRemoveAll(const NavigationStackItem.splash());
 
       } else if (statusCode == 400 || statusCode == 404) {
         if (globalNavigatorKey.currentState != null) {
