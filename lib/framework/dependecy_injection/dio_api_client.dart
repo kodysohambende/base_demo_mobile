@@ -20,4 +20,13 @@ abstract class DioApiClient {
     dio.interceptors.add(networkInterceptor(dio));
     return DioClient(dio);
   }
+
+  // @lazySingleton
+  // UserRepository getUserRepository(
+  //     DioClient dioClient,
+  //     ){
+  //   return UserRepository(
+  //       dioClient
+  //   );
+  // }
 }

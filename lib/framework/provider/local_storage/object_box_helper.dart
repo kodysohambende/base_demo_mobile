@@ -21,4 +21,5 @@ class ObjectBoxHelper {
     var store = await openStore(directory: p.join(dirPath.path, 'userBox'));
     return ObjectBoxHelper._create(store);
   }
+
 }

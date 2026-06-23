@@ -9,7 +9,7 @@ class ApiEndPoints {
   static const int apiStatus500 = 500;
 
   static const String baseUrl =  'https://service.odigo-clinic.kodyinfotech.com/odigo/medic/';
-
+  static const String users = "users";
 
   // auth
   static const String login = 'login';

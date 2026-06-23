@@ -65,7 +65,7 @@ class MainRouterDelegate extends RouterDelegate<NavigationStack> with ChangeNoti
       /// Splash
       splash: () => const MaterialPage(
         child: Splash(),
-        key: const ValueKey(Keys.splash),
+        key: ValueKey(Keys.splash),
       ),
 
       /// Error
@@ -75,7 +75,7 @@ class MainRouterDelegate extends RouterDelegate<NavigationStack> with ChangeNoti
 
           home: () => const MaterialPage(
             child: Home(),
-            key: ValueKey(Keys.splash),
+            key: ValueKey(Keys.home),
           ),
 
     ),
